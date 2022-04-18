@@ -28,9 +28,13 @@ a:Button("lolHUB kinda buggy",function()
 end)
 end)
 end)
-a:Button("i will add new hub if i find one",function()
+a:Label("i will add another hub if i find one",{
+    TextSize = 15; -- Self Explaining
+    TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
+    BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
 
-end)
+}) 
+
 b:DestroyGui()-- Dont Remove This For Destroy The GUI
 
 --- Coming Soon ---

@@ -28,8 +28,8 @@ a:Button("lolHUB kinda buggy",function()
 end)
 end)
 end)
-a:Button("RIPPER HUB",function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/hajibeza/RIPPER-HUB/main/BFMobile.lua'))()
+a:Button("i will add new hub if i find one",function()
+
 end)
 b:DestroyGui()-- Dont Remove This For Destroy The GUI
 

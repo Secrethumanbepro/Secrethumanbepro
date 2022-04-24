@@ -1,0 +1,220 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local GUI = Instance.new("ScrollingFrame")
+local MOD1 = Instance.new("TextButton")
+local MOD2 = Instance.new("TextButton")
+local MOD3 = Instance.new("TextButton")
+local MOD4 = Instance.new("TextButton")
+local Close = Instance.new("TextButton")
+local text = Instance.new("TextBox")
+local text1 = Instance.new("TextBox")
+local MOD5 = Instance.new("TextButton")
+local MOD6 = Instance.new("TextButton")
+local text2 = Instance.new("TextBox")
+local text3 = Instance.new("TextBox")
+local Open = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGUI
+
+Open.Name = "Open"
+Open.Parent = ScreenGui
+Open.BackgroundColor3 = Color3.fromRGB(85, 255, 0)
+Open.BorderSizePixel = 0
+Open.Position = UDim2.new(0, 0, 0.187165782, 0)
+Open.Size = UDim2.new(0, 70, 0, 31)
+Open.Font = Enum.Font.SourceSans
+Open.Text = "|open|"
+Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+Open.TextScaled = true
+Open.TextSize = 22.000
+Open.TextWrapped = true
+Open.MouseButton1Click:Connect(function()
+	GUI.Visible = true
+	Open.Visible = false
+end)
+
+
+Close.Name = "Close"
+Close.Parent = GUI
+Close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.844033241, 0, -0.00115864538, 0)
+Close.Size = UDim2.new(0, 69, 0, 46)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextSize = 50.000
+Close.MouseButton1Click:Connect(function()
+	GUI.Visible = false
+	Open.Visible = true
+end)
+
+
+GUI.Name = "GUI"
+GUI.Parent = ScreenGui
+GUI.Active = true
+GUI.BackgroundColor3 = Color3.fromRGB(113, 113, 113)
+GUI.BorderColor3 = Color3.fromRGB(0, 34, 104)
+GUI.BorderSizePixel = 14
+GUI.LayoutOrder = -1
+GUI.Position = UDim2.new(0.177859694, 0, 0.185634434, 0)
+GUI.Size = UDim2.new(0, 447, 0, 165)
+GUI.CanvasSize = UDim2.new(0, 0, 9, 0)
+GUI.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Left
+
+MOD1.Name = "MOD1"
+MOD1.Parent = GUI
+MOD1.BackgroundColor3 = Color3.fromRGB(135, 135, 135)
+MOD1.BorderSizePixel = 3
+MOD1.Position = UDim2.new(0.0764187276, 0, 0.0167855062, 0)
+MOD1.Size = UDim2.new(0, 165, 0, 50)
+MOD1.Font = Enum.Font.SourceSans
+MOD1.Text = "BLOXFRUIT HOHOHUB"
+MOD1.TextColor3 = Color3.fromRGB(255, 255, 255)
+MOD1.TextSize = 19.000
+MOD1.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/SCRIPTS/BloxFruitOld.txt'))()
+end)
+MOD2.Name = "MOD2"
+MOD2.Parent = GUI
+MOD2.BackgroundColor3 = Color3.fromRGB(113, 113, 113)
+MOD2.BorderSizePixel = 3
+MOD2.Position = UDim2.new(0.0585216656, 0, 0.0509506837, 0)
+MOD2.Size = UDim2.new(0, 165, 0, 50)
+MOD2.Font = Enum.Font.SourceSans
+MOD2.Text = "FLYGUI"
+MOD2.TextColor3 = Color3.fromRGB(255, 255, 255)
+MOD2.TextSize = 22.000
+MOD2.MouseButton1Click:Connect(function()
+	loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\103\105\115\116\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\109\101\111\122\111\110\101\89\84\47\98\102\48\51\55\100\102\102\57\102\48\97\55\48\48\49\55\51\48\52\100\100\100\54\55\102\100\99\100\51\55\48\47\114\97\119\47\101\49\52\101\55\52\102\52\50\53\98\48\54\48\100\102\53\50\51\51\52\51\99\102\51\48\98\55\56\55\48\55\52\101\98\51\99\53\100\50\47\97\114\99\101\117\115\37\50\53\50\48\120\37\50\53\50\48\102\108\121\37\50\53\50\48\50\37\50\53\50\48\111\98\102\108\117\99\97\116\111\114\39\41\44\116\114\117\101\41\41\40\41\10\10")()
+end)
+MOD3.Name = "MOD3"
+MOD3.Parent = GUI
+MOD3.BackgroundColor3 = Color3.fromRGB(135, 135, 135)
+MOD3.BorderSizePixel = 3
+MOD3.Position = UDim2.new(0.628991485, 0, 0.0167855062, 0)
+MOD3.Size = UDim2.new(0, 165, 0, 50)
+MOD3.Font = Enum.Font.SourceSans
+MOD3.Text = "ARSENALGUI"
+MOD3.TextColor3 = Color3.fromRGB(255, 255, 255)
+MOD3.TextSize = 22.000
+MOD3.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/L0j8bcVU" ,true))()
+end)
+MOD4.Name = "MOD4"
+MOD4.Parent = GUI
+MOD4.BackgroundColor3 = Color3.fromRGB(135, 135, 135)
+MOD4.BorderSizePixel = 3
+MOD4.Position = UDim2.new(0.628991485, 0, 0.0506536029, 0)
+MOD4.Size = UDim2.new(0, 165, 0, 50)
+MOD4.Font = Enum.Font.SourceSans
+MOD4.Text = "STRONGMANGUI"
+MOD4.TextColor3 = Color3.fromRGB(255, 255, 255)
+MOD4.TextSize = 22.000
+MOD4.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/ZwVb8Qz4"))()
+end)
+
+Close.Name = "Close"
+Close.Parent = GUI
+Close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.844033241, 0, -0.00115864538, 0)
+Close.Size = UDim2.new(0, 69, 0, 46)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextSize = 50.000
+Close.MouseButton1Click:Connect(function()
+	GUI.Visible = false
+	Open.Visible = true
+end)
+
+text.Name = "text"
+text.Parent = GUI
+text.BackgroundColor3 = Color3.fromRGB(115, 115, 115)
+text.BorderColor3 = Color3.fromRGB(255, 255, 255)
+text.Position = UDim2.new(0.359308124, 0, 0, 0)
+text.Size = UDim2.new(0, 164, 0, 45)
+text.Font = Enum.Font.SourceSans
+text.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+text.PlaceholderText = "SOEHUB"
+text.Text = ""
+text.TextColor3 = Color3.fromRGB(0, 0, 0)
+text.TextSize = 22.000
+
+text1.Name = "text1"
+text1.Parent = GUI
+text1.BackgroundColor3 = Color3.fromRGB(115, 115, 115)
+text1.BorderColor3 = Color3.fromRGB(255, 255, 255)
+text1.BorderSizePixel = 0
+text1.Position = UDim2.new(0.341411024, 0, 0.0356506221, 0)
+text1.Size = UDim2.new(0, 164, 0, 45)
+text1.Font = Enum.Font.SourceSans
+text1.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+text1.PlaceholderText = "==================================="
+text1.Text = ""
+text1.TextColor3 = Color3.fromRGB(0, 0, 0)
+text1.TextSize = 52.000
+
+MOD5.Name = "MOD5"
+MOD5.Parent = GUI
+MOD5.BackgroundColor3 = Color3.fromRGB(135, 135, 135)
+MOD5.BorderSizePixel = 3
+MOD5.Position = UDim2.new(0.628991485, 0, 0.0984848514, 0)
+MOD5.Size = UDim2.new(0, 165, 0, 50)
+MOD5.Font = Enum.Font.SourceSans
+MOD5.Text = "NAME THIS"
+MOD5.TextColor3 = Color3.fromRGB(255, 255, 255)
+MOD5.TextSize = 22.000
+
+MOD6.Name = "MOD6"
+MOD6.Parent = GUI
+MOD6.BackgroundColor3 = Color3.fromRGB(135, 135, 135)
+MOD6.BorderSizePixel = 3
+MOD6.Position = UDim2.new(0.0607587956, 0, 0.0984848514, 0)
+MOD6.Size = UDim2.new(0, 165, 0, 50)
+MOD6.Font = Enum.Font.SourceSans
+MOD6.Text = "SONIC SPEED SIMULATOR GUI KEY DEVIL Hub OP"
+MOD6.TextColor3 = Color3.fromRGB(255, 255, 255)
+MOD6.TextSize = 14.000
+MOD6.MouseButton1Click:Connect(function()
+	pcall(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Prajon/DEVIL-loader-remake/main/DEVIL-Hub-Script", true))()
+		end)
+	end)
+	
+text2.Name = "text2"
+text2.Parent = GUI
+text2.BackgroundColor3 = Color3.fromRGB(115, 115, 115)
+text2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+text2.BorderSizePixel = 0
+text2.Position = UDim2.new(0.341411024, 0, 0.0727866888, 0)
+text2.Size = UDim2.new(0, 164, 0, 45)
+text2.Font = Enum.Font.SourceSans
+text2.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+text2.PlaceholderText = "==================================="
+text2.Text = ""
+text2.TextColor3 = Color3.fromRGB(0, 0, 0)
+text2.TextSize = 52.000
+
+text3.Name = "text3"
+text3.Parent = GUI
+text3.BackgroundColor3 = Color3.fromRGB(115, 115, 115)
+text3.BorderColor3 = Color3.fromRGB(255, 255, 255)
+text3.BorderSizePixel = 0
+text3.Position = UDim2.new(0.341411024, 0, 0.117349967, 0)
+text3.Size = UDim2.new(0, 164, 0, 45)
+text3.Font = Enum.Font.SourceSans
+text3.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+text3.PlaceholderText = "==================================="
+text3.Text = ""
+text3.TextColor3 = Color3.fromRGB(0, 0, 0)
+text3.TextSize = 52.000
+

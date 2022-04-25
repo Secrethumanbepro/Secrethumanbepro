@@ -145,7 +145,7 @@ MOD6.Text = "Unfairhub"
 MOD6.TextColor3 = Color3.fromRGB(255, 255, 255)
 MOD6.TextSize = 14.000
 MOD6.MouseButton1Click:Connect(function()
-loadstring(game:HttpGet('https://raw.git hubusercontent.com/rblxscriptsnet/unf ir/main/rblxhub.lua'),true))	
+loadstring(game:HttpGet('https://raw.git hubusercontent.com/rblxscriptsnet/unf ir/main/rblxhub.lua'),true))()	
 end)
 SOHHUB.Name = "SOHHUB"
 SOHHUB.Parent = GUI

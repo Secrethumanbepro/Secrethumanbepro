@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window  = Library.CreateLib("Pop it trading v1", "BloodTheme")
+local Window  = Library.CreateLib("Pop it trading v1 made by kit", "BloodTheme")
 local Tab     = Window:NewTab("Main Scripts")
 local Section = Tab:NewSection("Buy NFTS")
 local Section = Tab:NewSection("Click the Tab to open and Close")
@@ -976,6 +976,7 @@ Section:NewButton("Scam3" , "scam2", function()
 end)
 
 
+
 Section:NewButton("safe Place" , "safe Place", function()
    loadstring(game:HttpGet(("https://raw.githubusercontent.com/RTHRTHTH3R34/POP-IT-TRADING-GO/main/README.md"), true))()
 end) 
@@ -989,6 +990,34 @@ Section:NewButton("Crash server", "Crash server", function()
 
     game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
 end)
+local Tab     = Window:NewTab("anti reaper")
+                local Section = Tab:NewSection("WILL buy inf melon")
+
+                                                        Section:NewToggle("anti reaper"  , "Dupe watermelon", function(state)
+                                                            if state then
+                                                                _G.on = true
+                                                                
+                                                                while _G.on == true do
+                                                                    wait()
+                                                                
+                                                                wait(0.2)
+                                                                local args = {
+                                                                        [1] = "watermelon"
+                                                                    }
+                                                                    game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
+                                                                        local args = {
+                                                                        [1] = "watermelon"
+                                                                    }
+                                                                    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+                                                                
+                                                                wait(0.2)
+                                                                
+                                                                    end
+                                                                    else
+                                                                _G.on = false
+                                                                        
+                                                                    end
+                                                                end)
 
 -- Gui to Lua
 -- Version: 3.2

@@ -459,9 +459,9 @@ end)
                                                                         
                                                                     end
                                                         end)
-                                                local Section = Tab:NewSection("if your done go to dupe items")
+                                                
 
-                local Tab     = Window:NewTab("buy itens")
+                local Tab     = Window:NewTab("buy items")
                 local Section = Tab:NewSection("Stuff")
                 Section:NewButton("buy the banana", "Buy Banana", function()
                     local args = {
@@ -473,7 +473,7 @@ end)
 
                 Section:NewButton("buy pop rb", "Buy Rb popits", function()
                     local args = {
-                        [1] = "Pop it rainbow!"
+                        [1] = "Pop It rainbow!"
                     }
                     game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
                 end)
@@ -487,8 +487,13 @@ end)
                     game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
 end)
 
-
-Section:NewButton("buy amogus rb", "comprar  Rb Amogus", function()
+Section:NewButton("Buy Watermelon" , "buy Watermelon", function()
+    local args = {
+        [1] = "Watermelon"
+    }
+game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+Section:NewButton("buy amogus rb", "Buy Rb Amogus", function()
 	local args = {
 		[1] = "Amogus Rainbow"
 	}
@@ -496,7 +501,7 @@ Section:NewButton("buy amogus rb", "comprar  Rb Amogus", function()
 	game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
 end)
 
-Section:NewButton("comprar crystal rb", "Buy Crystal Rainbow", function()
+Section:NewButton("Buy crystal rb", "Buy Crystal Rainbow", function()
 	local args = {
 		[1] = "Crystal Rainbow"
 	}
@@ -504,13 +509,6 @@ Section:NewButton("comprar crystal rb", "Buy Crystal Rainbow", function()
 	game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
 end)
 
-Section:NewButton("buy watermelon", "Buy Watermelon", function()
-	local args = {
-		[1] = "Watermelon"
-	}
-
-	game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
-end)
 
 local Tab     = Window:NewTab("Drop Items")
 local Section = Tab:NewSection("Drop stuff (must click to drop)")
@@ -523,6 +521,44 @@ Section:NewButton("Drop The Banana", "Drops The Banana", function()
 	local Event = game:GetService("ReplicatedStorage").RemoteEvents.Drop
 	Event:FireServer(A_1)
 end)
+Section:NewButton("Drop Pop It RB", "Drops Pop It Rainbow!", function()
+	local A_1 = "Pop It Rainbow!"
+	local Event = game:GetService("ReplicatedStorage").RemoteEvents.Equip
+	Event:FireServer(A_1)
+	wait(0.5)
+	local A_1 = "Pop It Rainbow!"
+	local Event = game:GetService("ReplicatedStorage").RemoteEvents.Drop
+	Event:FireServer(A_1)
+end)
+Section:NewButton("Drop Ben", "Drops Ben", function()
+	local A_1 = "Trading Ben"
+	local Event = game:GetService("ReplicatedStorage").RemoteEvents.Equip
+	Event:FireServer(A_1)
+	wait(0.5)
+	local A_1 = "Trading Ben"
+	local Event = game:GetService("ReplicatedStorage").RemoteEvents.Drop
+	Event:FireServer(A_1)
+end)
+	Section:NewButton("Drop Munneh", "Drops Munneh", function()
+	local A_1 = ("Munneh")
+	local Event = game:GetService("ReplicatedStorage").RemoteEvents.Equip
+	Event:FireServer(A_1)
+	wait(0.5)
+	local A_1 = "Munneh"
+	local Event = game:GetService("ReplicatedStorage").RemoteEvents.Drop
+	Event:FireServer(A_1)
+end)
+	Section:NewButton("Drop Mommeh Long Legs", "Drops Mommeh Long Legs", function()
+	local A_1 = ("Mommeh Long Legs")
+	local Event = game:GetService("ReplicatedStorage").RemoteEvents.Equip
+	Event:FireServer(A_1)
+	wait(0.5)
+	local A_1 = "Mommeh Long Legs"
+	local Event = game:GetService("ReplicatedStorage").RemoteEvents.Drop
+	Event:FireServer(A_1)
+end)
+
+
 
     
 
@@ -977,9 +1013,6 @@ end)
 
 
 
-Section:NewButton("safe Place" , "safe Place", function()
-   loadstring(game:HttpGet(("https://raw.githubusercontent.com/RTHRTHTH3R34/POP-IT-TRADING-GO/main/README.md"), true))()
-end) 
 
 
 local Section = Tab:NewSection("use autoclick")
@@ -991,10 +1024,33 @@ Section:NewButton("Crash server", "Crash server", function()
     game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
 end)
 local Tab     = Window:NewTab("anti reaper")
-                local Section = Tab:NewSection("find the auto watermelon on the gui")
-Section:NewButton("use F to Close and open anti reaper"  , "anti reaper", function()
-loadstring(game:HttpGet(("https://thekillerhood.xyz/cracked/CRACKEDBYKILLERHOOD"),true))()
-end)                                                     
+                local Section = Tab:NewSection("this Tab is for the annoying reaper")
+
+                                                        Section:NewToggle("anti reaper make sure you have alot of Watermelon"  , "Equips Watermelon", function(state)
+                                                            if state then
+                                                                _G.on = true
+                                                                
+                                                                while _G.on == true do
+                                                                    wait()
+                                                                
+                                                                
+	local A_1 = "Watermelon"
+	local Event = game:GetService("ReplicatedStorage").RemoteEvents.Equip
+	local A_1 = "Watermelon"
+	Visible = false
+
+	Event:FireServer(A_1)
+	
+                                                                
+                                                                
+                                                                
+                                                                    end
+                                                                    else
+                                                                _G.on = false
+                                                                        
+                                                                    end
+                                                                end)
+
 -- Gui to Lua
 -- Version: 3.2
 

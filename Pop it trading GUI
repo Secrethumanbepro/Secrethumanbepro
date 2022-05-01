@@ -1,7 +1,9 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window  = Library.CreateLib("Pop it trading v1", "BloodTheme")
-local Tab     = Window:NewTab("Main Scripts Click Tab on the keyboard script")
+local Tab     = Window:NewTab("Main Scripts")
 local Section = Tab:NewSection("Buy NFTS")
+local Section = Tab:NewSection("Click the tab on the keyboard script")
+local Section = Tab:NewSection("to open and close this Gui READ")
 Section:NewButton("Buy Ben", "Buy Ben", function()
 	local args = {
 		[1] = "Trading Ben"

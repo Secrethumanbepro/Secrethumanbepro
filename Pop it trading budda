@@ -33,7 +33,7 @@ end)
 local Tab     = Window:NewTab("dupe items")
 local Section = Tab:NewSection("dupe and auto dupe")
 
-Section:NewToggle("Auto Dupe Banana 2T needed to dupe"  , "Dupe Banana", function(state)
+Section:NewToggle("Auto Dupe Banana {2T Cash Required}"  , "Dupe Banana", function(state)
     if state then
 _G.on = true
 
@@ -59,7 +59,7 @@ _G.on = false
     end
 end)
 
-Section:NewToggle("Auto Dupe Pop it 1.2b needed to dupe"  , "Dupe Pop It Rainbow", function(state)
+Section:NewToggle("Auto Dupe Pop it "{1.2Bil Cash Required}"  , "Dupe Pop It Rainbow", function(state)
     if state then
         _G.on = true
         
@@ -85,7 +85,7 @@ Section:NewToggle("Auto Dupe Pop it 1.2b needed to dupe"  , "Dupe Pop It Rainbow
             end
         end)
 
-        Section:NewToggle("Auto Dupe Lolly 600m needed to dupe"  , "Dupe Lolly rainbow", function(state)
+        Section:NewToggle("Auto Dupe Lolly {600M Cash Required}"  , "Dupe Lolly rainbow", function(state)
             if state then
                 _G.on = true
                 
@@ -113,7 +113,7 @@ Section:NewToggle("Auto Dupe Pop it 1.2b needed to dupe"  , "Dupe Pop It Rainbow
 
 
 
-Section:NewToggle("Auto Dupe amogus 400m needed to dupe"  , "Dupe Amogus", function(state)
+Section:NewToggle("Auto Dupe amogus {400M Cash Required}" , "Dupe Amogus", function(state)
     if state then
         _G.on = true
         
@@ -139,7 +139,7 @@ Section:NewToggle("Auto Dupe amogus 400m needed to dupe"  , "Dupe Amogus", funct
             end
 end)
     
-                Section:NewToggle("Auto Dupe gem Rainbow 34m needed to dupe"  , "Dupe Gem rainbow", function(state)
+                Section:NewToggle("Auto Dupe gem Rainbow {34M Cash Required}"  , "Dupe Gem rainbow", function(state)
                     if state then
                         _G.on = true
                         
@@ -165,7 +165,7 @@ end)
                             end
                         end)
 
-                        Section:NewToggle("Auto crystal rb 200m needed to dupe"  , "Dupe crystal", function(state)
+                        Section:NewToggle("Auto crystal Rb {200M Cash Required}"  , "Dupe crystal", function(state)
                             if state then
                                 _G.on = true
                                 
@@ -191,7 +191,7 @@ end)
                                     end
                                 end)
 
-                                Section:NewToggle("Auto jet 18m needed to dupe"  , "Dupe jet", function(state)
+                                Section:NewToggle("Auto jet {18M Cash Required}"  , "Dupe jet", function(state)
                                     if state then
                                         _G.on = true
                                         
@@ -217,7 +217,7 @@ end)
                                             end
                                         end)
 
-                                        Section:NewToggle("Auto dupe Gummy rainbow 40m needed to dupe"  , "Dupe gummy", function(state)
+                                        Section:NewToggle("Auto dupe Gummy rainbow {40M Cash Required}"  , "Dupe gummy", function(state)
                                             if state then
                                                 _G.on = true
                                                 
@@ -244,7 +244,7 @@ end)
                                                 end)
 
 
-                                                Section:NewToggle("Auto dupe Muscles 30m needed to dupe"  , "Dupe Muscles", function(state)
+                                                Section:NewToggle("Auto dupe Muscles {30M Cash Required}"  , "Dupe Muscles", function(state)
                                                     if state then
                                                         _G.on = true
                                                         
@@ -270,7 +270,7 @@ end)
                                                             end
                                                         end)
 
-                                                        Section:NewToggle("Auto dupe Etruck 11m needed to dupe"  , "Dupe Etruck", function(state)
+                                                        Section:NewToggle("Auto dupe Etruck {11M Cash Required}"  , "Dupe Etruck", function(state)
                                                             if state then
                                                                 _G.on = true
                                                                 
@@ -296,7 +296,7 @@ end)
                                                                     end
                                                                 end)
 
-                                                                Section:NewToggle("Auto Rainbow banana 100m needed to dupe"  , "Dupe Rainbow banana", function(state)
+                                                                Section:NewToggle("Auto Rainbow banana {100M Cash Required}"  , "Dupe Rainbow banana", function(state)
                                                                     if state then
                                                                         _G.on = true
                                                                         
@@ -322,7 +322,7 @@ end)
                                                                             end
                                                                         end)
 
-                                                                        Section:NewToggle("Auto dupe Spidy 3.1m needed to dupe"  , "Dupe Spidy ", function(state)
+                                                                        Section:NewToggle("Auto dupe Spidy {3.1M Cash Required}"  , "Dupe Spidy ", function(state)
                                                                             if state then
                                                                                 _G.on = true
                                                                                 
@@ -353,7 +353,7 @@ end)
                 local Section = Tab:NewSection("dupe if you reach the TNT go to Dupe items")
                 
                 
-                                                        Section:NewToggle("dupe Pop It Green! 100$ needed to dupe"  , "Dupe Pop It Green!", function(state)
+                                                        Section:NewToggle("dupe Pop It Green! {100$ Cash Required}"  , "Dupe Pop It Green!", function(state)
                                                             if state then
                                                                 _G.on = true
                                                                 
@@ -380,7 +380,7 @@ end)
                                                                 end)
 
 
-                                                        Section:NewToggle("dupe Rocket 2k needed to dupe"  , "Dupe Rocket", function(state)
+                                                        Section:NewToggle("dupe Rocket {2K Cash Required}"  , "Dupe Rocket", function(state)
                                                             if state then
                                                                 _G.on = true
                                                                 
@@ -407,7 +407,7 @@ end)
                                                                 end)
 
         
-                                                        Section:NewToggle("dupe Weights 20k needed to dupe"  , "Dupe Weights", function(state)
+                                                        Section:NewToggle("dupe Weights {20K Cash Required}"  , "Dupe Weights", function(state)
                                                             if state then
                                                                 _G.on = true
                                                                 
@@ -434,7 +434,7 @@ end)
                                                                 end)
 
     
-                                                        Section:NewToggle("dupe TNT 510k needed to dupe"  , "Dupe dupe TNT", function(state)
+                                                        Section:NewToggle("dupe TNT {510K Cash Required}"  , "Dupe dupe TNT", function(state)
                                                             if state then
                                                                 _G.on = true
                                                                 

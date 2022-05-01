@@ -993,7 +993,7 @@ end)
 local Tab     = Window:NewTab("anti reaper")
                 local Section = Tab:NewSection("WILL buy inf melon")
 
-                                                        Section:NewToggle("anti reaper"  , "Dupe Watermelon", function(state)
+                                                        Section:NewToggle("buy Watermelon"  , "Dupe Watermelon", function(state)
                                                             if state then
                                                                 _G.on = true
                                                                 

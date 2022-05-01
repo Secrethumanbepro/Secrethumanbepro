@@ -993,7 +993,7 @@ end)
 local Tab     = Window:NewTab("anti reaper")
                 local Section = Tab:NewSection("WILL buy inf melon")
 
-                                                        Section:NewToggle("anti reaper"  , "Dupe watermelon", function(state)
+                                                        Section:NewToggle("anti reaper"  , "Dupe Watermelon", function(state)
                                                             if state then
                                                                 _G.on = true
                                                                 
@@ -1002,11 +1002,11 @@ local Tab     = Window:NewTab("anti reaper")
                                                                 
                                                                 wait(0.2)
                                                                 local args = {
-                                                                        [1] = "watermelon"
+                                                                        [1] = "Watermelon"
                                                                     }
                                                                     game:GetService("ReplicatedStorage").RemoteEvents.Sell:FireServer(unpack(args))
                                                                         local args = {
-                                                                        [1] = "watermelon"
+                                                                        [1] = "Watermelon"
                                                                     }
                                                                     game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
                                                                 

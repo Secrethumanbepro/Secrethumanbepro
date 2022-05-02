@@ -464,12 +464,6 @@ Section:NewButton("Buy crystal rb", "Buy Crystal Rainbow", function()
 	game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
 end)
 
-Section:NewButton("Buy Rb Baby Mermaid", "Buy Rb Baby Mermaid", function()
-                    local args = {
-                        [1] = "Baby Mermaid"
-                    }
-                    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
-                end)
 
 local Tab     = Window:NewTab("Drop Items")
 local Section = Tab:NewSection("Drop stuff (must click to drop)")

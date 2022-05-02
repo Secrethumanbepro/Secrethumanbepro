@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window  = Library.CreateLib("Pop it trading v1 made by kit", "Midnight")
+local Window  = Library.CreateLib("Pop it trading v1 made by xovgaming", "Midnight")
 local Tab     = Window:NewTab("Main Scripts")
 local Section = Tab:NewSection("Buy NFTS")
 local Section = Tab:NewSection("Click the Tab to open and Close")

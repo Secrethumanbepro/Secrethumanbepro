@@ -433,7 +433,7 @@ end)
                     game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
                 end)
                 
-                    
+    
 
                 Section:NewButton("Buy Rb Lolly", "Buy Rb Lolly", function()
                     local args = {
@@ -464,6 +464,12 @@ Section:NewButton("Buy crystal rb", "Buy Crystal Rainbow", function()
 	game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
 end)
 
+Section:NewButton("Buy Rb Baby Mermaid", "Buy Rb Baby Mermaid", function()
+                    local args = {
+                        [1] = "Baby Mermaid"
+                    }
+                    game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+                end)
 
 local Tab     = Window:NewTab("Drop Items")
 local Section = Tab:NewSection("Drop stuff (must click to drop)")
@@ -532,7 +538,7 @@ end)
 
 
         Section:NewButton("giant"  , "giant script", function()
-            --Shit ass script made by failedmite57926
+             script made by failedmite57926
 
 local LocalPlayer = game:GetService("Players").LocalPlayer
 local Character = LocalPlayer.Character

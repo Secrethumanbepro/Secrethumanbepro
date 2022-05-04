@@ -543,7 +543,7 @@ end)
             loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
         end)
 
-Section:NewButton("Safe Place for dupe", "On the sky", function()
+Section:NewButton("Safe Place for dupe kinda buggy", "On the sky", function()
     Instance.new('Part',workspace)
 Local = game:GetService('Players').LocalPlayer
 Char  = Local.Character

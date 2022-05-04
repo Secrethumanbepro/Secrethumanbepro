@@ -596,7 +596,7 @@ end)
 end)
 
 Section:NewButton ("Slow Falling" , "Makes falling Slow", function()
-workspace.Gravity = 55
+localPlayer.Gravity = 55
 end)
 
 

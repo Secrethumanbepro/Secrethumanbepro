@@ -543,7 +543,7 @@ end)
             loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
         end)
 
-Section:NewButton("Safe Place for dupe kinda buggy", "On the sky", function()
+Section:NewButton("Safe Place for dupe", "On the sky", function()
     Instance.new('Part',workspace)
 Local = game:GetService('Players').LocalPlayer
 Char  = Local.Character
@@ -567,9 +567,9 @@ box = Instance.new('Part',workspace)
 box.Anchored = true
 box.CanCollide = true
 box.Size = Vector3.new(180,1,180)
-box.Position = Vector3.new(0,50907,0)
+box.Position = Vector3.new(0,450907,0)
 
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0,50909,0)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0,450909,0)
 end)
 Section:NewButton("Go Back To Spawn" , "playerback", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(60,19,-267)

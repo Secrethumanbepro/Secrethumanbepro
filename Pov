@@ -595,8 +595,8 @@ game:GetService("UserInputService").JumpRequest:connect(function()
 end)
 end)
 
-Section:NewButton ("Slow Falling" , "Makes falling Slow", function()
-localPlayer.Gravity = 55
+Section:NewButton ("Slow gravity" , "Makes gravity Slow", function()
+workspace.Gravity = 55
 end)
 
 

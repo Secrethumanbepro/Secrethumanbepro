@@ -597,7 +597,7 @@ end)
 
 Section:NewButton ("Slow Falling" , "Makes falling Slow", function()
 workspace.Gravity = 55
-end()
+end)
 
 
 Section:NewButton("Flygui" , "Makes the player fly", function()

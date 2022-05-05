@@ -1004,7 +1004,8 @@ end)
 local Tab     = Window:NewTab("anti reaper")
                 local Section = Tab:NewSection("this Tab is for the annoying reaper")
 
-                                                        Section:NewToggle("anti reaper make sure you have alot of Watermelon"  , "Equips Watermelon", function(state)
+                                                        Section:NewToggle("anti reaper"  , "Equips Watermelon", function(state)
+
                                                             if state then
                                                                 _G.on = true
                                                                 
@@ -1028,6 +1029,7 @@ local Tab     = Window:NewTab("anti reaper")
                                                                         
                                                                     end
                                                                 end)
+Section = Tab:NewSection("Make sure you have alot of Watermelon")
 local Tab     = Window:NewTab("Update Credits")
                 local Section = Tab:NewSection("Made the gui Dragable")
 local Section = Tab:NewSection("added safe place on Scripts tab")

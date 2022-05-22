@@ -10,7 +10,7 @@ CoreGui:SetCore("SendNotification", {
 })
 wait(1.9)
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
-local Window  = Library.CreateLib("Pop it trading v1.3.3 made by xovgaming", "DarkTheme")
+local Window  = Library.CreateLib("Pop it trading v1.3.4 made by xovgaming", "DarkTheme")
 local Tab     = Window:NewTab("Main Scripts")
 local Section = Tab:NewSection("Buy NFTS")
 Section:NewButton("Buy Ben", "Buy Ben", function()
@@ -69,7 +69,57 @@ _G.on = false
     end
 end)
 
-Section:NewToggle("Auto Dupe RB Pop it {1.2Bil Cash Required}"  , "Dupe Pop It Rainbow", function(state)
+
+                                                        Section:NewToggle("Auto Buy Flower seed"  , "Test luck", function(state)
+                                                            if state then
+                                                                _G.on = true
+                                                                
+                                                                while _G.on == true do
+                                                                    wait()
+                                                                
+                                                                wait(0.2)
+        local args = {
+                [1] = "Flower Seed"
+            }
+            game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+
+                                                                wait(0.2)
+                                                                
+                                                                    end
+                                                                    else
+                                                                _G.on = false
+                                                                        
+                                                                    end
+                                                                end)
+                                                        Section:NewToggle("Auto Drop Flower seed"  , "Test luck", function(state)
+                                                            if state then
+                                                                _G.on = true
+                                                                
+                                                                while _G.on == true do
+                                                                    wait()
+                                                                
+                                                                wait(0.2)
+                                                                	local A_1 = ("Flower Seed")
+	local Event = game:GetService("ReplicatedStorage").RemoteEvents.Equip
+	Event:FireServer(A_1)
+	wait(0.3)
+	local A_1 = "Flower Seed"
+	local Event = game:GetService("ReplicatedStorage").RemoteEvents.Drop
+	Event:FireServer(A_1)
+
+                                                                wait(0.2)
+                                                                
+                                                                    end
+                                                                    else
+                                                                _G.on = false
+                                                                        
+                                                                    end
+                                                                end)
+
+
+
+
+Section:NewToggle("Auto Dupe RB Pop it {â€¢1.2BIl Cash Requiredâ€¢}"  , "Dupe Pop It Rainbow", function(state)
     if state then
         _G.on = true
         
@@ -416,8 +466,8 @@ end)
         _G.on = false
                 
             end
-        end)
- 
+               end)
+
                 
                                                         Section:NewToggle("dupe Pop It Green! {100$ Cash Required}"  , "Dupe Pop It Green!", function(state)
                                                             if state then
@@ -1789,9 +1839,408 @@ local Tab     = Window:NewTab("Anti-Reaper")
                                                                         
                                                                     end
                                                         end)
+                                                        
+                                                        local Tab     = Window:NewTab("Safety Trading")
+local Section = Tab:NewSection("Trade")
+Section:NewButton("Trading Platform 1","",function()
+        Instance.new('Part',workspace)
+Local = game:GetService('Players').LocalPlayer
+Char  = Local.Character
+touched,tpdback = false, false
+Local.CharacterAdded:connect(function(char)
+   if script.Disabled ~= true then
+       wait(.25)
+       loc = Char.HumanoidRootPart.Position
+       Char:MoveTo(box.Position + Vector3.new(0,.5,0))
+   end
+end)
+game:GetService('UserInputService').InputBegan:connect(function(key)
+   if key.KeyCode == Enum.KeyCode.Equals then
+       if script.Disabled ~= true then
+           script.Disabled = true
+           print'you may re-execute'
+       end
+   end
+end)
+box = Instance.new('Part',workspace)
+box.Anchored = true
+box.CanCollide = true
+box.Size = Vector3.new(3,1,3)
+box.Position = Vector3.new(210,139,-240)
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(210,141,-240)
+end)
+Section:NewButton("Trading Platform 2","",function()
+    Instance.new('Part',workspace)
+Local = game:GetService('Players').LocalPlayer
+Char  = Local.Character
+touched,tpdback = false, false
+Local.CharacterAdded:connect(function(char)
+   if script.Disabled ~= true then
+       wait(.25)
+       loc = Char.HumanoidRootPart.Position
+       Char:MoveTo(box.Position + Vector3.new(0,.5,0))
+   end
+end)
+game:GetService('UserInputService').InputBegan:connect(function(key)
+   if key.KeyCode == Enum.KeyCode.Equals then
+       if script.Disabled ~= true then
+           script.Disabled = true
+           print'you may re-execute'
+       end
+   end
+end)
+box = Instance.new('Part',workspace)
+box.Anchored = true
+box.CanCollide = true
+box.Size = Vector3.new(3,1,3)
+box.Position = Vector3.new(231,139,-295)
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(231,141,-295)
+end)
+Section:NewButton("Trading Platform 3","",function()
+    Instance.new('Part',workspace)
+Local = game:GetService('Players').LocalPlayer
+Char  = Local.Character
+touched,tpdback = false, false
+Local.CharacterAdded:connect(function(char)
+   if script.Disabled ~= true then
+       wait(.25)
+       loc = Char.HumanoidRootPart.Position
+       Char:MoveTo(box.Position + Vector3.new(0,.5,0))
+   end
+end)
+game:GetService('UserInputService').InputBegan:connect(function(key)
+   if key.KeyCode == Enum.KeyCode.Equals then
+       if script.Disabled ~= true then
+           script.Disabled = true
+           print'you may re-execute'
+       end
+   end
+end)
+box = Instance.new('Part',workspace)
+box.Anchored = true
+box.CanCollide = true
+box.Size = Vector3.new(3,1,3)
+box.Position = Vector3.new(174,139,-240)
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(174,141,-240)
+end)
+
+Section:NewButton("Trading Platform 4","",function()
+    Instance.new('Part',workspace)
+Local = game:GetService('Players').LocalPlayer
+Char  = Local.Character
+touched,tpdback = false, false
+Local.CharacterAdded:connect(function(char)
+   if script.Disabled ~= true then
+       wait(.25)
+       loc = Char.HumanoidRootPart.Position
+       Char:MoveTo(box.Position + Vector3.new(0,.5,0))
+   end
+end)
+game:GetService('UserInputService').InputBegan:connect(function(key)
+   if key.KeyCode == Enum.KeyCode.Equals then
+       if script.Disabled ~= true then
+           script.Disabled = true
+           print'you may re-execute'
+       end
+   end
+end)
+box = Instance.new('Part',workspace)
+box.Anchored = true
+box.CanCollide = true
+box.Size = Vector3.new(3,1,3)
+box.Position = Vector3.new(189,139,-295)
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(189,141,-295)
+end)
+Section:NewButton("Trading Platform 5","",function()
+        Instance.new('Part',workspace)
+Local = game:GetService('Players').LocalPlayer
+Char  = Local.Character
+touched,tpdback = false, false
+Local.CharacterAdded:connect(function(char)
+   if script.Disabled ~= true then
+       wait(.25)
+       loc = Char.HumanoidRootPart.Position
+       Char:MoveTo(box.Position + Vector3.new(0,.5,0))
+   end
+end)
+game:GetService('UserInputService').InputBegan:connect(function(key)
+   if key.KeyCode == Enum.KeyCode.Equals then
+       if script.Disabled ~= true then
+           script.Disabled = true
+           print'you may re-execute'
+       end
+   end
+end)
+box = Instance.new('Part',workspace)
+box.Anchored = true
+box.CanCollide = true
+box.Size = Vector3.new(3,1,3)
+box.Position = Vector3.new(134,139,-244)
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(134,141,-244)
+end)
+
+Section:NewButton("Trading Platform 6","",function()
+    Instance.new('Part',workspace)
+Local = game:GetService('Players').LocalPlayer
+Char  = Local.Character
+touched,tpdback = false, false
+Local.CharacterAdded:connect(function(char)
+   if script.Disabled ~= true then
+       wait(.25)
+       loc = Char.HumanoidRootPart.Position
+       Char:MoveTo(box.Position + Vector3.new(0,.5,0))
+   end
+end)
+game:GetService('UserInputService').InputBegan:connect(function(key)
+   if key.KeyCode == Enum.KeyCode.Equals then
+       if script.Disabled ~= true then
+           script.Disabled = true
+           print'you may re-execute'
+       end
+   end
+end)
+box = Instance.new('Part',workspace)
+box.Anchored = true
+box.CanCollide = true
+box.Size = Vector3.new(3,1,3)
+box.Position = Vector3.new(146,139,-294)
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(146,141,-294)
+end)
+Section:NewButton("Trading Platform 7","",function()
+    Instance.new('Part',workspace)
+Local = game:GetService('Players').LocalPlayer
+Char  = Local.Character
+touched,tpdback = false, false
+Local.CharacterAdded:connect(function(char)
+   if script.Disabled ~= true then
+       wait(.25)
+       loc = Char.HumanoidRootPart.Position
+       Char:MoveTo(box.Position + Vector3.new(0,.5,0))
+   end
+end)
+game:GetService('UserInputService').InputBegan:connect(function(key)
+   if key.KeyCode == Enum.KeyCode.Equals then
+       if script.Disabled ~= true then
+           script.Disabled = true
+           print'you may re-execute'
+       end
+   end
+end)
+box = Instance.new('Part',workspace)
+box.Anchored = true
+box.CanCollide = true
+box.Size = Vector3.new(3,1,3)
+box.Position = Vector3.new(93,139,-241)
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(93,141,-241)
+end)
+Section:NewButton("Trading Platform 8","",function()
+    Instance.new('Part',workspace)
+Local = game:GetService('Players').LocalPlayer
+Char  = Local.Character
+touched,tpdback = false, false
+Local.CharacterAdded:connect(function(char)
+   if script.Disabled ~= true then
+       wait(.25)
+       loc = Char.HumanoidRootPart.Position
+       Char:MoveTo(box.Position + Vector3.new(0,.5,0))
+   end
+end)
+game:GetService('UserInputService').InputBegan:connect(function(key)
+   if key.KeyCode == Enum.KeyCode.Equals then
+       if script.Disabled ~= true then
+           script.Disabled = true
+           print'you may re-execute'
+       end
+   end
+end)
+box = Instance.new('Part',workspace)
+box.Anchored = true
+box.CanCollide = true
+box.Size = Vector3.new(3,1,3)
+box.Position = Vector3.new(109,139,-294)
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(109,141,-294)
+end)
+Section:NewButton("Trading Platform 9","",function()
+    Instance.new('Part',workspace)
+Local = game:GetService('Players').LocalPlayer
+Char  = Local.Character
+touched,tpdback = false, false
+Local.CharacterAdded:connect(function(char)
+   if script.Disabled ~= true then
+       wait(.25)
+       loc = Char.HumanoidRootPart.Position
+       Char:MoveTo(box.Position + Vector3.new(0,.5,0))
+   end
+end)
+game:GetService('UserInputService').InputBegan:connect(function(key)
+   if key.KeyCode == Enum.KeyCode.Equals then
+       if script.Disabled ~= true then
+           script.Disabled = true
+           print'you may re-execute'
+       end
+   end
+end)
+box = Instance.new('Part',workspace)
+box.Anchored = true
+box.CanCollide = true
+box.Size = Vector3.new(3,1,3)
+box.Position = Vector3.new(52,139,-242)
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(52,141,-242)
+end)
+Section:NewButton("Trading Platform 10","",function()
+    Instance.new('Part',workspace)
+Local = game:GetService('Players').LocalPlayer
+Char  = Local.Character
+touched,tpdback = false, false
+Local.CharacterAdded:connect(function(char)
+   if script.Disabled ~= true then
+       wait(.25)
+       loc = Char.HumanoidRootPart.Position
+       Char:MoveTo(box.Position + Vector3.new(0,.5,0))
+   end
+end)
+game:GetService('UserInputService').InputBegan:connect(function(key)
+   if key.KeyCode == Enum.KeyCode.Equals then
+       if script.Disabled ~= true then
+           script.Disabled = true
+           print'you may re-execute'
+       end
+   end
+end)
+box = Instance.new('Part',workspace)
+box.Anchored = true
+box.CanCollide = true
+box.Size = Vector3.new(3,1,3)
+box.Position = Vector3.new(68,139,-296)
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(68,141,-296)
+end)
+local Section = Tab:NewSection("RB Trading Platform")
+Section:NewButton("RB Trading Platform 1","",function()
+    Instance.new('Part',workspace)
+Local = game:GetService('Players').LocalPlayer
+Char  = Local.Character
+touched,tpdback = false, false
+Local.CharacterAdded:connect(function(char)
+   if script.Disabled ~= true then
+       wait(.25)
+       loc = Char.HumanoidRootPart.Position
+       Char:MoveTo(box.Position + Vector3.new(0,.5,0))
+   end
+end)
+game:GetService('UserInputService').InputBegan:connect(function(key)
+   if key.KeyCode == Enum.KeyCode.Equals then
+       if script.Disabled ~= true then
+           script.Disabled = true
+           print'you may re-execute'
+       end
+   end
+end)
+box = Instance.new('Part',workspace)
+box.Anchored = true
+box.CanCollide = true
+box.Size = Vector3.new(3,1,3)
+box.Position = Vector3.new(10,139,-241)
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(10,141,-241)
+end)
+Section:NewButton("RB Trading Platform 2","",function()
+    Instance.new('Part',workspace)
+Local = game:GetService('Players').LocalPlayer
+Char  = Local.Character
+touched,tpdback = false, false
+Local.CharacterAdded:connect(function(char)
+   if script.Disabled ~= true then
+       wait(.25)
+       loc = Char.HumanoidRootPart.Position
+       Char:MoveTo(box.Position + Vector3.new(0,.5,0))
+   end
+end)
+game:GetService('UserInputService').InputBegan:connect(function(key)
+   if key.KeyCode == Enum.KeyCode.Equals then
+       if script.Disabled ~= true then
+           script.Disabled = true
+           print'you may re-execute'
+       end
+   end
+end)
+box = Instance.new('Part',workspace)
+box.Anchored = true
+box.CanCollide = true
+box.Size = Vector3.new(3,1,3)
+box.Position = Vector3.new(29,139,-296)
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(29,141,-296)
+end)
+Section:NewButton("RB Trading Platform 3","",function()
+    Instance.new('Part',workspace)
+Local = game:GetService('Players').LocalPlayer
+Char  = Local.Character
+touched,tpdback = false, false
+Local.CharacterAdded:connect(function(char)
+   if script.Disabled ~= true then
+       wait(.25)
+       loc = Char.HumanoidRootPart.Position
+       Char:MoveTo(box.Position + Vector3.new(0,.5,0))
+   end
+end)
+game:GetService('UserInputService').InputBegan:connect(function(key)
+   if key.KeyCode == Enum.KeyCode.Equals then
+       if script.Disabled ~= true then
+           script.Disabled = true
+           print'you may re-execute'
+       end
+   end
+end)
+box = Instance.new('Part',workspace)
+box.Anchored = true
+box.CanCollide = true
+box.Size = Vector3.new(3,1,3)
+box.Position = Vector3.new(-29,139,-239)
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-29,141,-239)
+end)
+Section:NewButton("RB Trading Platform 4","",function()
+    Instance.new('Part',workspace)
+Local = game:GetService('Players').LocalPlayer
+Char  = Local.Character
+touched,tpdback = false, false
+Local.CharacterAdded:connect(function(char)
+   if script.Disabled ~= true then
+       wait(.25)
+       loc = Char.HumanoidRootPart.Position
+       Char:MoveTo(box.Position + Vector3.new(0,.5,0))
+   end
+end)
+game:GetService('UserInputService').InputBegan:connect(function(key)
+   if key.KeyCode == Enum.KeyCode.Equals then
+       if script.Disabled ~= true then
+           script.Disabled = true
+           print'you may re-execute'
+       end
+   end
+end)
+box = Instance.new('Part',workspace)
+box.Anchored = true
+box.CanCollide = true
+box.Size = Vector3.new(3,1,3)
+box.Position = Vector3.new(-11,139,-294)
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-11,141,-294)
+end)
 local Tab     = Window:NewTab("Update Credits")
 local Section = Tab:NewSection("Added New Open and close Gui")
 local Section = Tab:NewSection("Add More items to Dupe")
+local Section = Tab:NewSection("Added New tab called Safety")
 
 
 

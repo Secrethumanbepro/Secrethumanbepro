@@ -10,7 +10,7 @@ CoreGui:SetCore("SendNotification", {
 })
 wait(1.9)
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
-local Window  = Library.CreateLib("Pop it trading v1.3.4 made by xovgaming", "DarkTheme")
+local Window  = Library.CreateLib("Pop it trading v1.3.3 made by xovgaming", "DarkTheme")
 local Tab     = Window:NewTab("Main Scripts")
 local Section = Tab:NewSection("Buy NFTS")
 Section:NewButton("Buy Ben", "Buy Ben", function()
@@ -119,7 +119,7 @@ end)
 
 
 
-Section:NewToggle("Auto Dupe RB Pop it {â€¢1.2BIl Cash Requiredâ€¢}"  , "Dupe Pop It Rainbow", function(state)
+Section:NewToggle("Auto Dupe RB Pop it {•1.2BIl Cash Required•}"  , "Dupe Pop It Rainbow", function(state)
     if state then
         _G.on = true
         
@@ -1894,9 +1894,9 @@ box = Instance.new('Part',workspace)
 box.Anchored = true
 box.CanCollide = true
 box.Size = Vector3.new(3,1,3)
-box.Position = Vector3.new(231,139,-295)
+box.Position = Vector3.new(230,139,-293)
 
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(231,141,-295)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(230,141,-293)
 end)
 Section:NewButton("Trading Platform 3","",function()
     Instance.new('Part',workspace)
@@ -2240,7 +2240,7 @@ end)
 local Tab     = Window:NewTab("Update Credits")
 local Section = Tab:NewSection("Added New Open and close Gui")
 local Section = Tab:NewSection("Add More items to Dupe")
-local Section = Tab:NewSection("Added New tab called Safety")
+local Section = Tab:NewSection("Added New tab called Safety Trading")
 
 
 
@@ -2295,6 +2295,7 @@ TextButton2.MouseButton1Click:connect(function()
 local vim = game:service("VirtualInputManager")
 vim:SendKeyEvent(true, "LeftControl", false, game)
 end)
+
 
 
 

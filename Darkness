@@ -126,14 +126,14 @@ end)
 
 
 
-Section:NewToggle("Auto Dupe RB Pop it {â€¢1.2BIl Cash Requiredâ€¢}"  , "Dupe Pop It Rainbow", function(state)
+Section:NewToggle("Auto Dupe RB Pop it {1.2BIl Cash Required}"  , "Dupe Pop It Rainbow", function(state)
     if state then
         _G.on = true
         
         while _G.on == true do
             wait()
         
-        wait(0.09)
+        wait(0.1)
         local args = {
                 [1] = "Pop It Rainbow!"
             }
@@ -144,7 +144,7 @@ Section:NewToggle("Auto Dupe RB Pop it {â€¢1.2BIl Cash Requiredâ€¢}"  , 
             game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
         
                 
-                wait(0.09)
+                wait(0.1)
                                     end
                     else
                 _G.on = false
@@ -152,7 +152,7 @@ Section:NewToggle("Auto Dupe RB Pop it {â€¢1.2BIl Cash Requiredâ€¢}"  , 
                     end
                 end)
 
-Section:NewToggle("Auto Dupe RB lolly {â€¢600M Cash Requiredâ€¢}"  , "Dupe", function(state)
+Section:NewToggle("Auto Dupe RB lolly {600M Cash Required}"  , "Dupe", function(state)
     if state then
         _G.on = true
         

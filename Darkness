@@ -1,3 +1,5 @@
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(28,51,-172)
+
 local CoreGui = game:GetService("StarterGui") -- Variable of StarterGui
 
 CoreGui:SetCore("SendNotification", {
@@ -35,9 +37,14 @@ Section:NewButton("Buy Mommeh Long Legs", "Buy Mommeh Long Legs", function()
 	game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
 end)
 
+
+
+
 Section:NewKeybind("Close", "Open", Enum.KeyCode.LeftControl, function()
     Library:ToggleUI()
 end)
+
+
 
 
 local Tab     = Window:NewTab("Auto Dupe")
@@ -119,14 +126,14 @@ end)
 
 
 
-Section:NewToggle("Auto Dupe RB Pop it {•1.2BIl Cash Required•}"  , "Dupe Pop It Rainbow", function(state)
+Section:NewToggle("Auto Dupe RB Pop it {â€¢1.2BIl Cash Requiredâ€¢}"  , "Dupe Pop It Rainbow", function(state)
     if state then
         _G.on = true
         
         while _G.on == true do
             wait()
         
-        wait(0.2)
+        wait(0.09)
         local args = {
                 [1] = "Pop It Rainbow!"
             }
@@ -136,23 +143,24 @@ Section:NewToggle("Auto Dupe RB Pop it {•1.2BIl Cash Required•}"  , "Dupe Po
             }
             game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
         
-        wait(0.2)
-        
-            end
-            else
-        _G.on = false
                 
-            end
-        end)
+                wait(0.09)
+                                    end
+                    else
+                _G.on = false
+                        
+                    end
+                end)
 
-        Section:NewToggle("Auto Dupe RB Lolly {600M Cash Required}"  , "Dupe Lolly rainbow", function(state)
-            if state then
-                _G.on = true
-                
-                while _G.on == true do
-                    wait()
-                
-                wait(0.2)
+Section:NewToggle("Auto Dupe RB lolly {â€¢600M Cash Requiredâ€¢}"  , "Dupe", function(state)
+    if state then
+        _G.on = true
+        
+        while _G.on == true do
+            wait()
+        
+        wait(0.1)
+
                 local args = {
                         [1] = "Lolly Rainbow"
                     }
@@ -1318,7 +1326,7 @@ local Section =Tab:NewSection("Auto Drop")
                                                                         
                                                                     end
                                                         end)
-wait(1)
+wait(0.3)
         local Tab     = Window:NewTab("Scripts")
         local Section = Tab:NewSection("Scripts")
 
@@ -2237,10 +2245,11 @@ box.Position = Vector3.new(-11,139,-294)
 
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-11,141,-294)
 end)
+
 local Tab     = Window:NewTab("Update Credits")
 local Section = Tab:NewSection("Added New Open and close Gui")
 local Section = Tab:NewSection("Add More items to Dupe")
-local Section = Tab:NewSection("Added New tab called Safety Trading")
+local Section = Tab:NewSection("Added New tab called Safety")
 
 
 
@@ -2295,7 +2304,3 @@ TextButton2.MouseButton1Click:connect(function()
 local vim = game:service("VirtualInputManager")
 vim:SendKeyEvent(true, "LeftControl", false, game)
 end)
-
-
-
-

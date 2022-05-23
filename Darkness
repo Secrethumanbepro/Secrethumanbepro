@@ -2245,6 +2245,35 @@ box.Position = Vector3.new(-11,139,-294)
 
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-11,141,-294)
 end)
+local Section = Tab:NewSection("Invisible Trading Platform")
+Section:NewButton("Invisible Trading Platform 1","",function()
+    Instance.new('Part',workspace)
+Local = game:GetService('Players').LocalPlayer
+Char  = Local.Character
+touched,tpdback = false, false
+Local.CharacterAdded:connect(function(char)
+   if script.Disabled ~= true then
+       wait(.25)
+       loc = Char.HumanoidRootPart.Position
+       Char:MoveTo(box.Position + Vector3.new(0,.5,0))
+   end
+end)
+game:GetService('UserInputService').InputBegan:connect(function(key)
+   if key.KeyCode == Enum.KeyCode.Equals then
+       if script.Disabled ~= true then
+           script.Disabled = true
+           print'you may re-execute'
+       end
+   end
+end)
+box = Instance.new('Part',workspace)
+box.Anchored = true
+box.CanCollide = true
+box.Size = Vector3.new(3,1,3)
+box.Position = Vector3.new(132,139,-57)
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(132,141,-57)
+end)
 
 local Tab     = Window:NewTab("Update Credits")
 local Section = Tab:NewSection("Added New Open and close Gui")
